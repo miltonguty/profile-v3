@@ -1,0 +1,18 @@
+---
+import Project from "../components/Project.astro";
+const { title } = Astro.props;
+const { data } = Astro.props;
+---
+
+<h1 class="text-2xl tracking-tight text-neutral-600 dark:text-white">
+  {title}
+</h1>
+<div class="flex flex-col justify-center rounded-sm border-spacing-1">
+  {
+    data.map((item) => (
+      <div class="my-2">
+        <Project data={item} />
+      </div>
+    ))
+  }
+</div>

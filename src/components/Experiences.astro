@@ -1,0 +1,25 @@
+---
+import Experience from "./Experience.astro";
+const { title, data } = Astro.props;
+---
+
+<style>
+  .background {
+    background: rgb(23, 23, 23);
+    background: linear-gradient(
+      0deg,
+      rgba(23, 23, 23, 1) 53%,
+      rgba(251, 249, 248, 1) 99%
+    );
+  }
+</style>
+<h1
+  class="text-2xl tracking-tight text-neutral-600 dark:text-white"
+>
+  {title}
+</h1>
+<div class="rounded-xl border-spacing-1 border-2 p-4">
+  <ol class="relative border-s-2 border-neutral-300 dark:border-neutral-800">
+    {data.map((item) => <Experience data={item} />)}
+  </ol>
+</div>

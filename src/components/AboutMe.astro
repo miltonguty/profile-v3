@@ -1,0 +1,75 @@
+---
+import FaceIcon from "./icons/FaceIcon";
+import GitIcon from "./icons/GitIcon";
+import InstagramIcon from "./icons/InstagramIcon";
+import LinkedinIcon from "./icons/LinkedinIcon";
+import TwitterIcon from "./icons/TwitterIcon";
+import WhatsappIcon from "./icons/WhatsappIcon";
+
+const { data } = Astro.props;
+---
+
+<div class="grid grid-cols-6 bg-neutral-100/80 p-2 rounded-t-xl">
+  <div class="col-span-1 flex flex-col justify-center items-center">
+    <img src={data.photo} class="w-32 rounded-full" />
+  </div>
+  <div class="col-span-5 p-4 pt-2">
+    <div class="flex flex-row justify-between">
+      <div class="bg-neutral-100/80 p-2 rounded-b-xl">
+        <h1
+          class="text-2xl font-semibold tracking-tight text-neutral-600 dark:text-white"
+        >
+          {data.name}
+        </h1>
+        <h2 class="text-xl tracking-tight text-neutral-600 dark:text-white">
+          {data.profession}
+        </h2>
+      </div>
+      <div class="flex flex-row gap-2">
+        {
+          data.whatsapp !== "" && (
+            <a href={data.whatsapp} target="_blank">
+              <WhatsappIcon />
+            </a>
+          )
+        }
+        {
+          data.facebook !== "" && (
+            <a href={data.facebook} target="_blank">
+              <FaceIcon />
+            </a>
+          )
+        }
+        {
+          data.instagram !== "" && (
+            <a href={data.instagram} target="_blank">
+              <InstagramIcon />
+            </a>
+          )
+        }
+        {
+          data.linkedin !== "" && (
+            <a href={data.linkedin} target="_blank">
+              <LinkedinIcon />
+            </a>
+          )
+        }
+        {
+          data.gitHub !== "" && (
+            <a href={data.gitHub} target="_blank">
+              <GitIcon />
+            </a>
+          )
+        }
+        {
+          data.twitter !== "" && (
+            <a href={data.twitter} target="_blank">
+              <TwitterIcon />
+            </a>
+          )
+        }
+      </div>
+    </div>
+    {data.aboutMe}
+  </div>
+</div>

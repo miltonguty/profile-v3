@@ -1,0 +1,19 @@
+---
+import MySiteLayout from "../layouts/MainLayout.astro";
+import AboutMe from "../components/AboutMe.astro";
+import Projects from "../components/Projects.astro";
+import Experiences from "../components/Experiences.astro";
+import data from "../data/me.json";
+---
+
+<MySiteLayout title="Home Page">
+  <div class="grid grid-cols-1 md:grid-cols-5">
+    <div class="col-span-4 mr-9">
+      <AboutMe data={data.profile} />
+      <Experiences title="Experience work" data={data.experience} />
+    </div>
+    <div class="col-span-1">
+      <Projects title="Personal Projects" data={data.projects} />
+    </div>
+  </div>
+</MySiteLayout>
