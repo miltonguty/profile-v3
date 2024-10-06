@@ -12,14 +12,7 @@
     "twitter": ""
   },
   "projects": [
-    {
-      "icon": "web",
-      "repository": "",
-      "link": "https://www.bloomexperiences.com",
-      "title": "bloomexperiences",
-      "description": "Making Travel a Fun Learning Experience ",
-      "tags": ["Wordress", "css", "php", "Mysql", "Javascript"]
-    },
+    
     {
       "icon": "application",
       "repository": "",
