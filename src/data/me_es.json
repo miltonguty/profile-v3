@@ -2,8 +2,8 @@
   "profile": {
     "name": "Milton Gutierrez",
     "profession": "Full stack developer",
-    "cvFile": "/download/2.-CV-Milton Adalid Gutierrez Barco.pdf",
-    "photo": "/images/me.jpeg",
+    "cvFile": "./download/2.-CV-Milton Adalid Gutierrez Barco.pdf",
+    "photo": "./images/me.jpeg",
     "aboutMe": "Tengo 8 años de experiencia en el desarrollo de aplicaciones web y de escritorio, con habilidades muy fuertes en JavaScript frontend y backend, con mucha motivación para aprender nuevas tecnologías y buenas habilidades de comunicación. Altamente responsable, honesta con puntualidad y compromiso, adaptabilidad al cambio, facilidad para trabajar en equipo, en condición de alta presión",
     "whatsapp": "",
     "facebook": "https://www.facebook.com/milton.guty.dev",
