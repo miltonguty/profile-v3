@@ -3,6 +3,7 @@
 
 // Consultar datos externos, de una API privada o base de datos
 //const datos = await fetch('http://localhost:4321/api/me.json').then(r => r.json());
+const { data } = Astro.props;
 ---
 
 <nav
@@ -13,7 +14,7 @@
     <div class=""></div>
   </div>
   <div class="mr-5">
-    <a href="/download/1.-CV-ES-Milton Adalid Gutierrez Barco.pdf">
+    <a href={data.cvFile}>
       Download<img src="/images/download.svg" />
     </a>
   </div>

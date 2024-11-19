@@ -6,7 +6,7 @@ import Experiences from "../../components/Experiences.astro";
 import data from "../../data/me_en.json";
 ---
 
-<MySiteLayout title="Home Page">
+<MySiteLayout title="Home Page"  data={data.profile}>
   <div class="grid grid-cols-1 md:grid-cols-6 p-2 md:p-0">
     <div class="w-full col-span-4 md:pr-2">
       <AboutMe data={data.profile} />
