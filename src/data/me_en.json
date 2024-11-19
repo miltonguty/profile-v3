@@ -2,8 +2,8 @@
   "profile": {
     "name": "Milton Gutierrez",
     "profession": "Full stack developer",
-    "cvFile": "./download/1.-CV-ES-Milton Adalid Gutierrez Barco.pdf",
-    "photo": "./images/me.jpeg",
+    "cvFile": "download/1.-CV-ES-Milton Adalid Gutierrez Barco.pdf",
+    "photo": "images/me.jpeg",
     "aboutMe": "Full stack developer with more than 8 years of experience in commercial software development, with skills and knowledge in frontend and backend with different technologies.",
     "whatsapp": "",
     "facebook": "https://www.facebook.com/milton.guty.dev",
