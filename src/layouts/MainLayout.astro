@@ -3,7 +3,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import NavBar from "../components/NavBar.astro";
 import "../styles/global.css";
-const { title, cvFile } = Astro.props;
+const { title, cvFile,domain } = Astro.props;
 ---
 
 <html lang="en">
@@ -14,7 +14,7 @@ const { title, cvFile } = Astro.props;
   </head>
   <body class="md:flex md:flex-col md:justify-center md:items-center">
 
-    <NavBar  cvFile={cvFile}  />
+    <NavBar domain={domain} cvFile={cvFile}  />
 
     <article class="md:container w-full md:w-[1128px]">
       <slot />
