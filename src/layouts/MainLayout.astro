@@ -13,7 +13,9 @@ const { title, profile } = Astro.props;
     <Header title={title}/>
   </head>
   <body class="md:flex md:flex-col md:justify-center md:items-center">
+    ----------------------------
     {profile}
+    --------------------------------
     <NavBar  profile={profile}  />
 
     <article class="md:container w-full md:w-[1128px]">
