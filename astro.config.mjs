@@ -8,5 +8,8 @@ export default defineConfig({
   integrations: [react(), tailwind()],
   build: {
     assets: 'assets'
+  },
+  redirects: {
+    '/': '/en'
   }
 });
